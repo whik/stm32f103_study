@@ -392,6 +392,11 @@
               <FileType>5</FileType>
               <FilePath>.\user\main.h</FilePath>
             </File>
+            <File>
+              <FileName>README.md</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\README.md</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -406,11 +411,6 @@
               <FileName>drv_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\driver\drv_led.c</FilePath>
-            </File>
-            <File>
-              <FileName>drv_uart1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\driver\drv_uart1.c</FilePath>
             </File>
           </Files>
         </Group>

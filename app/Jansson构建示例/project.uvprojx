@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\user;..\..\core;..\..\lib\inc;..\..\sys;.\driver</IncludePath>
+              <IncludePath>.\user;..\..\core;..\..\lib\inc;..\..\sys;..\..\driver;.\driver</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -392,25 +392,30 @@
               <FileType>5</FileType>
               <FilePath>.\user\main.h</FilePath>
             </File>
+            <File>
+              <FileName>jansson_demo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\jansson_demo.c</FilePath>
+            </File>
+            <File>
+              <FileName>def.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\user\def.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>driver</GroupName>
           <Files>
             <File>
-              <FileName>drv_key.c</FileName>
+              <FileName>drv_uart1.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\driver\drv_key.c</FilePath>
+              <FilePath>.\driver\drv_uart1.c</FilePath>
             </File>
             <File>
               <FileName>drv_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\driver\drv_led.c</FilePath>
-            </File>
-            <File>
-              <FileName>drv_uart1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\driver\drv_uart1.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -494,14 +499,33 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>::Data Exchange</GroupName>
+        </Group>
       </Groups>
     </Target>
   </Targets>
 
   <RTE>
     <apis/>
-    <components/>
-    <files/>
+    <components>
+      <component Cclass="Data Exchange" Cgroup="JSON" Csub="Jansson" Cvendor="Keil" Cversion="2.7.0" condition="ARMCC">
+        <package license="doc\license.txt" name="Jansson" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="Keil" version="1.0.0"/>
+        <targetInfos>
+          <targetInfo name="project"/>
+        </targetInfos>
+      </component>
+    </components>
+    <files>
+      <file attr="config" category="source" name="src\jansson_config.c" version="2.7.0">
+        <instance index="0">RTE\Data_Exchange\jansson_config.c</instance>
+        <component Cclass="Data Exchange" Cgroup="JSON" Csub="Jansson" Cvendor="Keil" Cversion="2.7.0" condition="ARMCC"/>
+        <package license="doc\license.txt" name="Jansson" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="Keil" version="1.0.0"/>
+        <targetInfos>
+          <targetInfo name="project"/>
+        </targetInfos>
+      </file>
+    </files>
   </RTE>
 
 </Project>

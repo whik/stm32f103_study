@@ -398,11 +398,6 @@
           <GroupName>driver</GroupName>
           <Files>
             <File>
-              <FileName>drv_key.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\driver\drv_key.c</FilePath>
-            </File>
-            <File>
               <FileName>drv_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\driver\drv_led.c</FilePath>

@@ -403,6 +403,16 @@
               <FilePath>.\driver\drv_key.c</FilePath>
             </File>
             <File>
+              <FileName>drv_eprom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\driver\drv_eprom.c</FilePath>
+            </File>
+            <File>
+              <FileName>drv_eprom_iic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\driver\drv_eprom_iic.c</FilePath>
+            </File>
+            <File>
               <FileName>drv_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\driver\drv_led.c</FilePath>
